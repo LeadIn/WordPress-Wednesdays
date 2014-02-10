@@ -11,12 +11,16 @@ $break          : 12
 
 // container
 
-.site-header, .site-footer, .site-promo, .page-content
+.page-content
   @include container($total-columns, $break)
 
 // Layout
 
 @include at-breakpoint($break)
-  .page-content
-    .main
-      @include pad(2,2,$break)
+  .header
+    @include span-columns(8 omega, $break)
+    @include pad(2, 2, $break)
+
+  .main
+    @include span-columns(6 omega, $break)
+    @include pad(3, 3, $break)

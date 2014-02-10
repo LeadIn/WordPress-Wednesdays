@@ -1,4 +1,5 @@
 // Imports
+@import "compass/css3"
 @import "variables"
 @import "mixins"
 @import "normalize"
@@ -11,3 +12,25 @@
 @import "print"
 
 // Pages
+
+.page-content
+    margin-top: 5%
+
+    @include at-breakpoint($break)
+        margin-top: 25%
+.logo
+    font-weight: 300
+    text-transform: uppercase
+    text-align: center
+
+    span
+        display: inline-block
+        padding: 0.25em 0.5em
+    
+    .wednesdays
+        font-family: 'open sans condensed'
+        color: $wp-blue
+
+    .wordpress
+        background-color: $wp-blue
+        color: #fff

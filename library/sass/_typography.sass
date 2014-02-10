@@ -1,12 +1,13 @@
 $typecsset-base-font-size:      18px
 $typecsset-base-line-height:    32px
+$typecsset-h1-font-size:        50px
 $typecsset-show-baseline:       false
 
 @import "typecsset"
 
 body
-    font-family: 'open sans', sans-serif
-    padding: $typecsset-magic-number
+    color: $text-color
+    font-family: $font-family
 
 hr
     @extend %typecsset-vertical-rhythm

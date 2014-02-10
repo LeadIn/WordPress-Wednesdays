@@ -2,13 +2,14 @@ auto : true
 permalink : /:title/
 exclude : ['sass', 'config.rb', 'README.md']
 
-title : GitHub Pages Boilerplate
-description : GitHub Pages Boilerplate by Nelson Joyce.
-url : https://github.com/gnelsonj/GitHub-Pages-Boilerplate
+title : WordPress Wednesdays
+description : The best WordPress links every Wednesday.
+url : http://wordpresswednesdays.co
 author :
   firstName : Nelson
   lastName : Joyce
-  jobTitle : Product Designer
+  jobTitle : LeadIn
+  url : http://LeadIn.com
   email : nellyvan@gmail.com
   github : gnelsonj
   linkedIn : gnelsonj

@@ -347,7 +347,7 @@ table {
 }
 
 /* line 14, ../sass/_grid.sass */
-.site-header, .site-footer, .site-promo, .page-content {
+.page-content {
   *zoom: 1;
   max-width: 34em;
   _width: 34em;
@@ -357,23 +357,35 @@ table {
   margin-right: auto;
 }
 /* line 38, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.site-header:after, .site-footer:after, .site-promo:after, .page-content:after {
+.page-content:after {
   content: "";
   display: table;
   clear: both;
 }
 @media (min-width: 59em) {
   /* line 14, ../sass/_grid.sass */
-  .site-header, .site-footer, .site-promo, .page-content {
+  .page-content {
     max-width: 59em;
   }
 }
 
 @media (min-width: 59em) {
-  /* line 21, ../sass/_grid.sass */
-  .page-content .main {
+  /* line 20, ../sass/_grid.sass */
+  .header {
+    width: 66.10169%;
+    float: right;
+    margin-right: 0;
     padding-left: 16.94915%;
     padding-right: 16.94915%;
+  }
+
+  /* line 24, ../sass/_grid.sass */
+  .main {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+    padding-left: 25.42373%;
+    padding-right: 25.42373%;
   }
 }
 /**
@@ -597,14 +609,257 @@ td {
   padding: 16px;
 }
 
-/* line 7, ../sass/_typography.sass */
+/* line 8, ../sass/_typography.sass */
 body {
+  color: #444444;
   font-family: "open sans", sans-serif;
-  padding: 32px;
 }
 
-/* line 14, ../sass/_typography.sass */
+/* line 15, ../sass/_typography.sass */
 fieldset {
   padding: 64px;
   padding: 3.55556rem;
+}
+
+/* line 10, ../sass/_forms.sass */
+fieldset {
+  background: #e6e6e6;
+  border: 1px solid #cccccc;
+  margin: 0;
+  margin-bottom: 16px;
+  margin-bottom: 0.88889rem;
+  padding: 32px;
+  padding: 1.77778rem;
+}
+/* line 17, ../sass/_forms.sass */
+fieldset p {
+  font-family: "open sans", sans-serif;
+}
+
+/* line 20, ../sass/_forms.sass */
+input,
+label,
+select {
+  display: block;
+  font-family: "open sans", sans-serif;
+  font-size: 18px;
+  font-size: 1rem;
+  line-height: 1.77778;
+}
+
+/* line 27, ../sass/_forms.sass */
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-bottom: 0.44444rem;
+}
+/* line 31, ../sass/_forms.sass */
+label.required:after {
+  content: "*";
+}
+/* line 34, ../sass/_forms.sass */
+label abbr {
+  display: none;
+}
+
+/* line 37, ../sass/_forms.sass */
+textarea,
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"],
+input[type="week"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  -o-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 0.5em;
+  border: 1px solid #cccccc;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "open sans", sans-serif;
+  font-size: 18px;
+  font-size: 1rem;
+  line-height: 1.77778;
+  margin-bottom: 16px;
+  margin-bottom: 0.88889rem;
+  padding: 10.56px;
+  padding: 0.58667rem;
+  width: 100%;
+}
+/* line 64, ../sass/_forms.sass */
+textarea:hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover,
+input[type="tel"]:hover,
+input[type="text"]:hover,
+input[type="url"]:hover,
+input[type="color"]:hover,
+input[type="date"]:hover,
+input[type="datetime"]:hover,
+input[type="datetime-local"]:hover,
+input[type="month"]:hover,
+input[type="time"]:hover,
+input[type="week"]:hover {
+  border-color: #b3b3b3;
+}
+/* line 67, ../sass/_forms.sass */
+textarea:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus {
+  border-color: #d54e21;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(191, 70, 30, 0.7);
+  outline: none;
+}
+
+/* line 72, ../sass/_forms.sass */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* line 75, ../sass/_forms.sass */
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: 8px;
+  margin-right: 0.44444rem;
+}
+
+/* line 79, ../sass/_forms.sass */
+select {
+  width: auto;
+  margin-bottom: 32px;
+  margin-bottom: 1.77778rem;
+}
+
+/* line 83, ../sass/_forms.sass */
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 18px;
+  font-size: 1rem;
+  line-height: 1.77778;
+}
+
+/* line 1, ../sass/_buttons.sass */
+button,
+input[type="submit"] {
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 1px 0 #e26e47;
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 1px 0 #e26e47;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 1px 0 #e26e47;
+  padding-top: 8px;
+  padding-top: 0.44444rem;
+  padding-right: 16px;
+  padding-right: 0.88889rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.44444rem;
+  padding-left: 16px;
+  padding-left: 0.88889rem;
+  font-size: 18px;
+  font-size: 1rem;
+  line-height: 1.77778;
+  background-color: #d54e21;
+  color: white;
+  border: 1px solid #bf461e;
+  text-align: center;
+}
+/* line 15, ../sass/_buttons.sass */
+button.large,
+input.large[type="submit"] {
+  padding-top: 16px;
+  padding-top: 0.88889rem;
+  padding-right: 64px;
+  padding-right: 3.55556rem;
+  padding-bottom: 16px;
+  padding-bottom: 0.88889rem;
+  padding-left: 64px;
+  padding-left: 3.55556rem;
+  font-size: 30px;
+  font-size: 1.66667rem;
+  line-height: 1.06667;
+}
+/* line 22, ../sass/_buttons.sass */
+button:hover,
+input[type="submit"]:hover {
+  background-color: #df5c30;
+}
+/* line 25, ../sass/_buttons.sass */
+button:active,
+input[type="submit"]:active {
+  background-color: #bf461e;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 16, ../sass/style.sass */
+.page-content {
+  margin-top: 5%;
+}
+@media (min-width: 59em) {
+  /* line 16, ../sass/style.sass */
+  .page-content {
+    margin-top: 25%;
+  }
+}
+
+/* line 21, ../sass/style.sass */
+.logo {
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 26, ../sass/style.sass */
+.logo span {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+}
+/* line 30, ../sass/style.sass */
+.logo .wednesdays {
+  font-family: "open sans condensed";
+  color: #4ca6cf;
+}
+/* line 34, ../sass/style.sass */
+.logo .wordpress {
+  background-color: #4ca6cf;
+  color: white;
 }
