@@ -838,7 +838,7 @@ input[type="submit"]:active {
 @media (min-width: 59em) {
   /* line 16, ../sass/style.sass */
   .page-content {
-    margin-top: 25%;
+    margin-top: 15%;
   }
 }
 
